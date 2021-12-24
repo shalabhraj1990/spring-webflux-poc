@@ -17,6 +17,7 @@
 	<modules>
 		<module>springboot-mvc-application</module>
 		<module>springboot-client-application</module>
+		<module>springboot-webflux-application</module>
 	</modules>
 
 	<properties>
@@ -26,10 +27,7 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+				
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

@@ -24,7 +24,7 @@ public class App {
 			long startTime = System.currentTimeMillis();
 			WebClient client = WebClient.builder().baseUrl("http://localhost:8080/hi").build();
 			ExecutorService es = Executors.newFixedThreadPool(1000);
-			for (int i = 0; i < 100; i++) {
+			for (int i = 0; i < 500; i++) {
 				es.submit(() -> {
 					String message = client.get().retrieve().bodyToMono(String.class).block();
 					log.warn(message);
